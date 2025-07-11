@@ -8,12 +8,12 @@ export function SectionProblem() {
     <div className="min-h-screen relative w-screen">
       <div className="absolute left-4 right-4 md:left-8 md:right-8 top-4 flex justify-between text-lg">
         <span>Current problem</span>
-        <span className="text-[#878787]">
+        <span className="text-muted-foreground">
           <Link href="/">neurov.ai</Link>
         </span>
       </div>
       <div className="min-h-screen flex flex-col justify-center max-w-7xl mx-auto px-4 md:px-8">
-        <div className="grid md:grid-cols-3 gap-8 md:pt-0 h-[580px] md:h-auto overflow-auto pb-[100px] md:pb-0">
+        <div className="grid md:grid-cols-3 gap-8 pt-16 md:pt-16 h-[580px] md:h-auto overflow-auto pb-[100px] md:pb-0">
           <div className="space-y-8">
             <Card className="bg-neutral">
               <svg
@@ -29,14 +29,15 @@ export function SectionProblem() {
               </svg>
               <h2 className="text-2xl">Wasted time and revenue</h2>
 
-              <p className="text-[#878787] text-sm text-center">
+              <p className="text-muted-foreground text-sm text-center">
               SMS marketing delivers some of the highest open rates in lead acquisition.
               But legacy CRMs are a nightmare—bloated with trigger words, tagging systems, and manual workflows that make managing the customer journey painful. Aged leads get ignored. Time is wasted. Revenue is lost. Your database works against you instead of for you. 
               </p>
             </Card>
             <div className="px-8">
-              <h2 className="text-6xl text-center leading-tight">
-                The current market for AI-powered CRMs is a mess.
+              <h2 className="text-4xl text-center leading-tight">
+                Consensus: <br />
+                user-friendly and performant CRM software is rare.
               </h2>
             </div>
           </div>
@@ -80,7 +81,7 @@ export function SectionProblem() {
 
               <h2 className="text-2xl">Overly complex UI</h2>
 
-              <p className="text-[#878787] text-sm text-center">
+              <p className="text-muted-foreground text-sm text-center">
                 Existing CRMs often compound the problem by having overly complex UI, and configuration options that are unintuitive.
               </p>
             </Card>
@@ -114,10 +115,8 @@ export function SectionProblem() {
 
               <h2 className="text-2xl">Old tech</h2>
 
-              <p className="text-[#878787] text-sm text-center">
-                Market leading CRMs are sure to eventually adopt AI, but . This approach often results in cumbersome
-                navigation and a disconnect between the software and the needs
-                of users.
+              <p className="text-muted-foreground text-sm text-center">
+                Market leading CRMs are sure to eventually adopt AI, but user-friendly and a gamified user-experience has been abscent for decades.
               </p>
             </Card>
           </div>

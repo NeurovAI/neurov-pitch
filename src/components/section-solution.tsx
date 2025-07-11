@@ -8,12 +8,12 @@ export function SectionSolution() {
     <div className="min-h-screen relative w-screen">
       <div className="absolute left-4 right-4 md:left-8 md:right-8 top-4 flex justify-between text-lg">
         <span>Our solution</span>
-        <span className="text-[#878787]">
-          <Link href="/">midday.ai</Link>
+        <span className="text-muted-foreground">
+          <Link href="/">neurov.ai</Link>
         </span>
       </div>
       <div className="min-h-screen flex flex-col justify-center max-w-7xl mx-auto px-4 md:px-8">
-        <div className="grid md:grid-cols-3 gap-8 md:pt-0 h-[580px] md:h-auto overflow-auto pb-[100px] md:pb-0">
+        <div className="grid md:grid-cols-3 gap-8 pt-16 md:pt-16 h-[580px] md:h-auto overflow-auto pb-[100px] md:pb-0">
           <div className="space-y-8">
             <Card>
               <svg
@@ -29,7 +29,7 @@ export function SectionSolution() {
               </svg>
               <h2 className="text-2xl">One OS</h2>
 
-              <p className="text-[#878787] text-sm text-center">
+              <p className="text-muted-foreground text-sm text-center">
                 We set out on a journey to develop an all-encompassing business
                 operating system. Our overarching aim is to empower
                 entrepreneurs by providing them with a comprehensive suite of
@@ -69,7 +69,7 @@ export function SectionSolution() {
 
               <h2 className="text-2xl">Intermediary</h2>
 
-              <p className="text-[#878787] text-sm text-center">
+              <p className="text-muted-foreground text-sm text-center">
                 Midday serves as the bridge between you and your accountant,
                 streamlining your month-end procedures, reducing manual work,
                 and easily packaging everything up for financial review. By
@@ -82,10 +82,9 @@ export function SectionSolution() {
             </Card>
           </div>
           <div className="space-y-8">
-            <div className="px-8">
-              <h2 className="text-[42px] text-center leading-[58px]">
-                We offer business insights and automates tedious tasks, freeing
-                users to focus on what they love.
+            <div className="px-4">
+              <h2 className="text-4xl text-center leading-tight">
+                We have a dedicated 'Arena' for clients to deploy AI Agents to put SMS marketing on autopilot.
               </h2>
             </div>
 
@@ -119,7 +118,7 @@ export function SectionSolution() {
 
               <h2 className="text-2xl">User friendly & AI</h2>
 
-              <p className="text-[#878787] text-sm text-center">
+              <p className="text-muted-foreground text-sm text-center">
                 We&apos;re focusing on building the platform with our community to
                 ensure it&apos;s as user-friendly as possible and covers all the
                 features needed to assist as many business owners as possible.

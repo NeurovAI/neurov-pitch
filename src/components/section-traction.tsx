@@ -11,7 +11,7 @@ import customers from "./assets/customers.png";
 import { Card } from "./ui";
 
 export function SectionTraction() {
-  const [stars, setStars] = useState(0);
+  const [stars, setStars] = useState(308);
   const [users, setUsers] = useState(0);
   const [transactions, setTransactions] = useState(0);
 
@@ -39,8 +39,8 @@ export function SectionTraction() {
     <div className="min-h-screen relative w-screen">
       <div className="absolute left-4 right-4 md:left-8 md:right-8 top-4 flex justify-between text-lg">
         <span>Where we are</span>
-        <span className="text-[#878787]">
-          <Link href="/">midday.ai</Link>
+        <span className="text-muted-foreground">
+          <Link href="/">neurov.ai</Link>
         </span>
       </div>
       <div className="min-h-screen flex flex-col justify-center max-w-7xl mx-auto px-4 md:px-8">
@@ -49,23 +49,21 @@ export function SectionTraction() {
             <Card className="min-h-[365px]">
               <h2 className="text-2xl">Waitlist sign ups</h2>
 
-              <p className="text-[#878787] text-sm text-center">
-                We have built Midday in public on X and amassed nearly 4000
-                signups ready to start using Midday.
+              <p className="text-muted-foreground text-sm text-center">
+                We have built Arena to firstly serve our chosen niche of Health Insurance Advisors in the United States.
+                So far we have 2 clients signed, read to test the beta product.
               </p>
 
               <span className="mt-auto font-mono text-[80px] md:text-[122px]">
-                3453
+                2
               </span>
             </Card>
 
             <Card className="min-h-[365px]">
-              <h2 className="text-2xl">GitHub stars</h2>
+              <h2 className="text-2xl">Test messages sent by TARA</h2>
 
-              <p className="text-[#878787] text-sm text-center">
-                Since going open source on the 20th of March 2024 we’ve gained
-                834 stars on GitHub. Our goal is to build a great community
-                around Midday.
+              <p className="text-muted-foreground text-sm text-center">
+                So far we have over 250 messages on test campaigns
               </p>
 
               <div className="flex items-center space-x-4">
@@ -76,7 +74,7 @@ export function SectionTraction() {
                 <span className="mt-auto font-mono text-[80px] md:text-[122px]">
                   {stars &&
                     Intl.NumberFormat("en", { notation: "compact" }).format(
-                        0
+                        308
                     )}
                 </span>
               </div>
@@ -86,10 +84,10 @@ export function SectionTraction() {
             <Card className="min-h-[365px]">
               <h2 className="text-2xl">Private beta users</h2>
 
-              <p className="text-[#878787] text-sm text-center">
-                This is how many we’ve let into the system to start using it,
-                joined the community and started to form Midday together with
-                us.
+              <p className="text-muted-foreground text-sm text-center">
+                Will begin testing within the next 2 weeks. <br />
+                <br />
+                We are expecting to have 100 users in the private beta by the end of the year.
               </p>
 
               <div className="flex items-center space-x-4">
@@ -105,11 +103,10 @@ export function SectionTraction() {
             </Card>
 
             <Card className="min-h-[365px]">
-              <h2 className="text-2xl">Transactions</h2>
+              <h2 className="text-2xl">Leads Booked</h2>
 
-              <p className="text-[#878787] text-sm text-center">
-                We are already handling a significant amount of transaction
-                data.
+              <p className="text-muted-foreground text-sm text-center">
+                We are set to begin production testing with our pilot clients in the next 2 weeks.
               </p>
 
               <div className="flex items-center space-x-4">

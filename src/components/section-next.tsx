@@ -12,7 +12,7 @@ export function SectionNext() {
     <div className="min-h-screen relative w-screen">
       <div className="absolute left-4 right-4 md:left-8 md:right-8 top-4 flex justify-between text-lg">
         <span>Whats coming next</span>
-        <span className="text-[#878787]">
+        <span className="text-muted-foreground">
           <Link href="/">neurov.ai</Link>
         </span>
       </div>

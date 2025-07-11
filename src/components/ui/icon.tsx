@@ -1,5 +1,5 @@
 import { ArchiveIcon } from "@radix-ui/react-icons";
-import { Settings } from "lucide-react";
+import { Settings, Sun, Moon } from "lucide-react";
 import { FaXTwitter } from "react-icons/fa6";
 import { FiGithub } from "react-icons/fi";
 import {
@@ -548,4 +548,6 @@ export const Icons = {
   FolderTransactions: MdTopic,
   Calendar: MdEditCalendar,
   Reply: MdReplay,
+  Sun: Sun,
+  Moon: Moon,
 };

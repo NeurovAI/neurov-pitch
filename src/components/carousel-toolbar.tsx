@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { Button } from "./ui/button";
 import { useCarousel } from "./ui/carousel";
 import {
@@ -22,6 +23,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useHotkeys } from "react-hotkeys-hook";
 import { FaXTwitter } from "react-icons/fa6";
 import { CopyInput } from "./ui/copy-input";
+import { ThemeToggle } from "./theme-toggle";
 
 type Props = {
   views: number;
@@ -71,6 +73,7 @@ const popupCenter = ({ url, title, w, h }: PopupCenterProps) => {
 
 export function CarouselToolbar({ views }: Props) {
   const api = useCarousel();
+  const [isShareDialogOpen, setIsShareDialogOpen] = useState(false);
 
   useHotkeys("arrowRight", () => api.scrollNext(), [api]);
   useHotkeys("arrowLeft", () => api.scrollPrev(), [api]);
@@ -86,16 +89,20 @@ export function CarouselToolbar({ views }: Props) {
     popup?.focus();
   };
 
+  const handleBookMeeting = () => {
+    window.open("https://cal.com/team/neurov-ai/arena-demo", "_blank");
+  };
+
   return (
-    <Dialog>
+    <Dialog open={isShareDialogOpen} onOpenChange={setIsShareDialogOpen}>
       <div className="fixed flex justify-center left-0 bottom-5 w-full">
         <AnimatePresence>
           <motion.div animate={{ y: views > 0 ? 0 : 100 }} initial={{ y: 100 }}>
             <TooltipProvider delayDuration={20}>
-              <div className="flex backdrop-filter backdrop-blur-lg dark:bg-[#1A1A1A]/80 h-10 px-4 py-2 border border-[#2C2C2C] items-center rounded-2xl space-x-4">
+              <div className="flex backdrop-filter backdrop-blur-lg bg-background/80 dark:bg-background/80 h-10 px-4 py-2 border border-border items-center rounded-2xl space-x-4">
                 <Tooltip>
                   <TooltipTrigger>
-                    <div className="text-[#878787] flex items-center space-x-2 border-r-[1px] border-border pr-4">
+                    <div className="text-muted-foreground flex items-center space-x-2 border-r-[1px] border-border pr-4">
                       <Icons.Visibility size={18} />
 
                       <span className="text-sm">
@@ -116,8 +123,8 @@ export function CarouselToolbar({ views }: Props) {
 
                 <Tooltip>
                   <TooltipTrigger asChild>
-                    <button type="button" onClick={() => api.scrollTo(100)}>
-                      <Icons.Calendar size={18} className="text-[#878787]" />
+                    <button type="button" onClick={handleBookMeeting}>
+                      <Icons.Calendar size={18} className="text-muted-foreground" />
                     </button>
                   </TooltipTrigger>
                   <TooltipContent
@@ -134,7 +141,7 @@ export function CarouselToolbar({ views }: Props) {
                       <button type="button">
                         <Icons.Share
                           size={18}
-                          className="text-[#878787] -mt-[1px]"
+                          className="text-muted-foreground -mt-[1px]"
                         />
                       </button>
                     </DialogTrigger>
@@ -144,6 +151,18 @@ export function CarouselToolbar({ views }: Props) {
                     sideOffset={25}
                   >
                     <span className="text-xs">Share</span>
+                  </TooltipContent>
+                </Tooltip>
+
+                <Tooltip>
+                  <TooltipTrigger asChild>
+                    <ThemeToggle />
+                  </TooltipTrigger>
+                  <TooltipContent
+                    className="py-1 px-3 rounded-sm"
+                    sideOffset={25}
+                  >
+                    <span className="text-xs">Toggle theme</span>
                   </TooltipContent>
                 </Tooltip>
 

@@ -6,7 +6,7 @@ export function SectionVision() {
     <div className="min-h-screen relative w-screen">
       <div className="absolute left-8 right-8 top-4 flex justify-between text-lg">
         <span>Our vision</span>
-        <span className="text-[#878787]">
+        <span className="text-muted-foreground">
           <Link href="/">neurov.ai</Link>
         </span>
       </div>
