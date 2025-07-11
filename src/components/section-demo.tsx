@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 import { Icons } from "./ui/icon";
 import dynamic from "next/dynamic";
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { useHotkeys } from "react-hotkeys-hook";
 
 const ReactHlsPlayer = dynamic(() => import("react-hls-player"), {
@@ -18,7 +18,7 @@ type Props = {
 };
 
 export function SectionDemo({ playVideo }: Props) {
-  const playerRef = useRef();
+  const playerRef = useRef<any>();
   const [isPlaying, setPlaying] = useState(true);
   const isDesktop = useMediaQuery("(min-width: 768px)");
 
@@ -29,6 +29,20 @@ export function SectionDemo({ playVideo }: Props) {
     },
     []
   );
+
+  const togglePlay = useCallback(() => {
+    if (isPlaying) {
+      playerRef.current?.pause();
+    } else {
+      playerRef.current?.play();
+    }
+
+    setPlaying((prev) => !prev);
+  }, [isPlaying]);
+
+  const handleRestart = () => {
+    playerRef.current.currentTime = 0;
+  };
 
   useHotkeys(
     "backspace",
@@ -46,28 +60,14 @@ export function SectionDemo({ playVideo }: Props) {
         togglePlay();
       }
     }
-  }, [playVideo, isDesktop]);
-
-  const handleRestart = () => {
-    playerRef.current.currentTime = 0;
-  };
-
-  const togglePlay = () => {
-    if (isPlaying) {
-      playerRef.current?.pause();
-    } else {
-      playerRef.current?.play();
-    }
-
-    setPlaying((prev) => !prev);
-  };
+  }, [playVideo, isDesktop, togglePlay]);
 
   return (
     <div className="min-h-screen relative w-screen">
       <div className="absolute left-4 right-4 md:left-8 md:right-8 top-4 flex justify-between text-lg">
         <span>Demo - Version 0.5 (Private beta)</span>
         <span className="text-[#878787]">
-          <Link href="/">midday.ai</Link>
+          <Link href="/">neurov.ai</Link>
         </span>
       </div>
       <div className="flex flex-col min-h-screen justify-center container">

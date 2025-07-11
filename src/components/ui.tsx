@@ -1,6 +1,11 @@
 import { cn } from "@/lib/utils";
 
-export function Card({ children, className }) {
+type CardProps = {
+  children: React.ReactNode;
+  className?: string;
+};
+
+export function Card({ children, className }: CardProps) {
   return (
     <div
       className={cn(
@@ -13,9 +18,13 @@ export function Card({ children, className }) {
   );
 }
 
-export function Grid() {
+type GridProps = {
+  className?: string;
+};
+
+export function Grid({ className }: GridProps) {
   return (
-    <div className="pointer-events-none absolute inset-0 flex justify-center">
+    <div className={cn("pointer-events-none absolute inset-0 flex justify-center opacity-20", className)}>
       <div className="h-full w-full grid-cols-6 gap-3.5 px-4 grid">
         <div className="border-r-[1px] border-[#161616]" />
         <div className="border-r-[1px] border-[#161616]" />

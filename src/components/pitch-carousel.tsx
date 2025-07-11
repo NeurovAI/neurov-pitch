@@ -1,7 +1,6 @@
 "use client";
 
 import { setViewCount } from "@/actions/set-view-count";
-import { SectionBook } from "@/components//section-book";
 import { SectionDemo } from "@/components/section-demo";
 import { SectionNext } from "@/components/section-next";
 import { SectionProblem } from "@/components/section-problem";
@@ -38,7 +37,7 @@ export function PitchCarousel() {
       fetchViewsCount();
       called.current = true;
     }
-  }, [called.current]);
+  }, []);
 
   useEffect(() => {
     if (!api) {
@@ -81,9 +80,6 @@ export function PitchCarousel() {
         </CarouselItem>
         <CarouselItem>
           <SectionNext />
-        </CarouselItem>
-        <CarouselItem>
-          <SectionBook />
         </CarouselItem>
       </CarouselContent>
 

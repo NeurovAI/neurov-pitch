@@ -1,10 +1,10 @@
 "use client";
 
-import useEmblaCarousel, {
-  type EmblaCarouselType as CarouselApi,
-  type EmblaOptionsType as CarouselOptions,
-  type EmblaPluginType as CarouselPlugin,
-} from "embla-carousel-react";
+import useEmblaCarousel from "embla-carousel-react";
+
+type CarouselApi = ReturnType<typeof useEmblaCarousel>[1];
+type CarouselOptions = Parameters<typeof useEmblaCarousel>[0];
+type CarouselPlugin = any;
 import * as React from "react";
 import { cn } from "@/lib/utils";
 import { Button } from "./button";
@@ -60,7 +60,7 @@ const Carousel = React.forwardRef<
         ...opts,
         axis: orientation === "horizontal" ? "x" : "y",
       },
-      plugins
+      plugins || []
     );
     const [canScrollPrev, setCanScrollPrev] = React.useState(false);
     const [canScrollNext, setCanScrollNext] = React.useState(false);

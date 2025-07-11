@@ -2,7 +2,7 @@ export function SectionStart() {
   return (
     <div className="min-h-screen">
       <span className="absolute right-4 md:right-8 top-4 text-lg">
-        Pitch/2024
+        Pitch/2025
       </span>
 
       <div className="container min-h-screen relative">
@@ -22,7 +22,7 @@ export function SectionStart() {
           </svg>
         </div>
         <h1 className="text-[110px] bottom-[250px] left-2 md:text-[426px] absolute md:right-0 md:bottom-8 md:left-auto">
-          Midday
+          Neurov
         </h1>
       </div>
     </div>

@@ -95,6 +95,8 @@ import {
 } from "react-icons/md";
 import { PiDiscordLogo } from "react-icons/pi";
 
+type IconProps = React.SVGProps<SVGSVGElement>;
+
 export const Icons = {
   LogoSmall: (props: any) => (
     <svg
@@ -320,7 +322,7 @@ export const Icons = {
       />
     </svg>
   ),
-  FileDocument: (props) => (
+  FileDocument: (props: IconProps) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width={24}

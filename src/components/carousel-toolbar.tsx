@@ -27,7 +27,14 @@ type Props = {
   views: number;
 };
 
-const popupCenter = ({ url, title, w, h }) => {
+type PopupCenterProps = {
+  url: string;
+  title: string;
+  w: number;
+  h: number;
+};
+
+const popupCenter = ({ url, title, w, h }: PopupCenterProps) => {
   const dualScreenLeft =
     window.screenLeft !== undefined ? window.screenLeft : window.screenX;
   const dualScreenTop =
@@ -122,12 +129,14 @@ export function CarouselToolbar({ views }: Props) {
                 </Tooltip>
 
                 <Tooltip>
-                  <TooltipTrigger>
+                  <TooltipTrigger asChild>
                     <DialogTrigger asChild>
-                      <Icons.Share
-                        size={18}
-                        className="text-[#878787] -mt-[1px]"
-                      />
+                      <button type="button">
+                        <Icons.Share
+                          size={18}
+                          className="text-[#878787] -mt-[1px]"
+                        />
+                      </button>
                     </DialogTrigger>
                   </TooltipTrigger>
                   <TooltipContent
