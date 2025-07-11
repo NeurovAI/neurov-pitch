@@ -43,7 +43,7 @@ export function SectionTraction() {
           <Link href="/">midday.ai</Link>
         </span>
       </div>
-      <div className="flex flex-col min-h-screen justify-center container">
+      <div className="container min-h-screen flex flex-col justify-center">
         <div className="grid md:grid-cols-3 gap-8 px-4 md:px-0 md:pt-0 h-[580px] md:h-auto overflow-auto pb-[100px] md:pb-0">
           <div className="space-y-8">
             <Card className="min-h-[365px]">
