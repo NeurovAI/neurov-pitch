@@ -5,7 +5,7 @@ export function SectionStart() {
         Pitch/2025
       </span>
 
-      <div className="container min-h-screen relative flex flex-col justify-center">
+      <div className="min-h-screen relative flex flex-col justify-center max-w-7xl mx-auto px-4 md:px-8">
         <div className="absolute bottom-auto mt-[150px] -ml-[35px] md:ml-0 md:mt-0 md:bottom-[650px] scale-50 md:scale-100">
           <svg
             xmlns="http://www.w3.org/2000/svg"

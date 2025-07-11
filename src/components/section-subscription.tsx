@@ -10,13 +10,13 @@ export function SectionSubscription() {
           <Link href="/">midday.ai</Link>
         </span>
       </div>
-      <div className="container min-h-screen flex flex-col justify-center">
-        <div className="px-4 md:px-0 md:pt-0 h-[580px] md:h-auto overflow-auto pb-[100px] md:pb-0">
+      <div className="min-h-screen flex flex-col justify-center max-w-7xl mx-auto px-4 md:px-8">
+        <div className="md:pt-0 h-[580px] md:h-auto overflow-auto pb-[100px] md:pb-0">
           <div className="mb-4">
             <h2 className="text-2xl">Tiers</h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 px-4 md:px-0 md:pt-0 md:mb-[80px] mb-12">
+          <div className="grid md:grid-cols-3 gap-8 md:pt-0 md:mb-[80px] mb-12">
             <Card className="pb-8">
               <span className="py-1 px-4 bg-white text-black rounded-lg text-sm font-medium mb-4">
                 Base
@@ -59,7 +59,7 @@ export function SectionSubscription() {
             <h2 className="text-2xl">Add ons</h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 px-4 md:px-0 md:pt-0">
+          <div className="grid md:grid-cols-3 gap-8 md:pt-0">
             <Card className="pb-8">
               <h2>Team seats</h2>
               <p className="text-[#878787] text-sm text-center">
@@ -86,7 +86,7 @@ export function SectionSubscription() {
             </Card>
           </div>
 
-          <div className="px-4 md:px-0">
+          <div>
             <a
               href="https://midday.ai/engine"
               target="_blank"

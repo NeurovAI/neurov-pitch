@@ -10,8 +10,8 @@ export function SectionVision() {
           <Link href="/">neurov.ai</Link>
         </span>
       </div>
-      <div className="container min-h-screen flex flex-col justify-center">
-        <h1 className="text-[45px] px-4 md:px-0 md:text-[122px] font-medium text-center leading-none">
+      <div className="min-h-screen flex flex-col justify-center max-w-7xl mx-auto px-4 md:px-8">
+        <h1 className="text-[45px] md:text-[122px] font-medium text-center leading-none">
           Our mission is to become the #1 agentic CRM.
         </h1>
       </div>
