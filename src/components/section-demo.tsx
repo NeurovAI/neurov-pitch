@@ -70,7 +70,7 @@ export function SectionDemo({ playVideo }: Props) {
           <Link href="/">neurov.ai</Link>
         </span>
       </div>
-      <div className="flex flex-col min-h-screen justify-center container">
+      <div className="container min-h-screen flex flex-col justify-center">
         <div className="group">
           <div className="absolute top-[50%] left-[50%] w-[200px] h-[50px] -ml-[100px] -mt-[50px] group-hover:opacity-100 hidden md:flex space-x-4 items-center justify-center opacity-0 z-30 transition-all">
             <Button

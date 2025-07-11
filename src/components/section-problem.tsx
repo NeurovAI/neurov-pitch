@@ -12,7 +12,7 @@ export function SectionProblem() {
           <Link href="/">neurov.ai</Link>
         </span>
       </div>
-      <div className="flex flex-col min-h-screen justify-center container">
+      <div className="container min-h-screen flex flex-col justify-center">
         <div className="grid md:grid-cols-3 gap-8 px-4 md:px-0 md:pt-0 h-[580px] md:h-auto overflow-auto pb-[100px] md:pb-0">
           <div className="space-y-8">
             <Card className="bg-neutral">
@@ -115,9 +115,7 @@ export function SectionProblem() {
               <h2 className="text-2xl">Old tech</h2>
 
               <p className="text-[#878787] text-sm text-center">
-                Services are outdated and prioritize features tailored to
-                accountants rather than offering a user-friendly interface for
-                business owners. This approach often results in cumbersome
+                Market leading CRMs are sure to eventually adopt AI, but . This approach often results in cumbersome
                 navigation and a disconnect between the software and the needs
                 of users.
               </p>
