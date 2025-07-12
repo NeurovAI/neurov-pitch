@@ -20,7 +20,7 @@ export function SectionNext() {
         <div className="grid md:grid-cols-3 gap-8 md:pt-0 h-[580px] md:h-auto overflow-auto pb-[100px] md:pb-0">
           <div className="space-y-8">
             <Card className="min-h-[370px]">
-              <h2 className="text-xl">Invoice</h2>
+              <h2 className="text-xl">NINA</h2>
               <span />
               <Image src={invoice} width={362} alt="Invoice" quality={100} />
             </Card>
@@ -40,7 +40,7 @@ export function SectionNext() {
           </div>
           <div className="space-y-8">
             <Card className="min-h-[370px]">
-              <h2 className="text-xl">Midday AI</h2>
+              <h2 className="text-xl">Website form integration</h2>
               <span />
               <Image src={ai} width={362} alt="Midday AI" quality={100} />
             </Card>
