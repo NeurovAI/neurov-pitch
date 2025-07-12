@@ -50,7 +50,6 @@ export function SectionTraction() {
               <h2 className="text-2xl">Waitlist sign ups</h2>
 
               <p className="text-muted-foreground text-sm text-center">
-                We have built Arena to firstly serve our chosen niche of Health Insurance Advisors in the United States.
                 So far we have 2 clients signed, read to test the beta product.
               </p>
 
@@ -85,8 +84,6 @@ export function SectionTraction() {
               <h2 className="text-2xl">Private beta users</h2>
 
               <p className="text-muted-foreground text-sm text-center">
-                Will begin testing within the next 2 weeks. <br />
-                <br />
                 We are expecting to have 100 users in the private beta by the end of the year.
               </p>
 

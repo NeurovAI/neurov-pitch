@@ -13,7 +13,7 @@ export function SectionSubscription() {
       <div className="min-h-screen flex flex-col justify-center max-w-7xl mx-auto px-4 md:px-8">
         <div className="md:pt-0 h-[580px] md:h-auto overflow-auto pb-[100px] md:pb-0">
           <div className="mb-4">
-            <h2 className="text-2xl">Premium Positioning</h2>
+            <h2 className="text-2xl">Micro-SaaS Premium Positioning</h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 md:pt-0 md:mb-[80px] mb-12">
@@ -43,20 +43,18 @@ export function SectionSubscription() {
 
             <Card className="pb-8">
               <span className="py-1 px-4 border border-border rounded-lg text-sm font-medium mb-4">
-                TCR registration
+                Database storage
               </span>
 
-              <h2 className="text-2xl">TBD</h2>
+              <h2 className="text-2xl">20 USD/month</h2>
               <p className="text-muted-foreground text-sm text-center">
-                This plan will be offered to bigger companies with lots of
-                seats. This will be licensed based and the price is yet to be
-                determined.
+                A limit will be set to lead storage, as it is a moving cost.
               </p>
             </Card>
           </div>
 
           <div className="mb-4">
-            <h2 className="text-2xl">Add ons</h2>
+            <h2 className="text-2xl">Sclaing into Traditional SaaS</h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 md:pt-0">
