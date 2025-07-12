@@ -7,6 +7,7 @@ import { SectionProblem } from "@/components/section-problem";
 import { SectionSolution } from "@/components/section-solution";
 import { SectionStart } from "@/components/section-start";
 import { SectionSubscription } from "@/components/section-subscription";
+import { SectionTargetMarket } from "@/components/section-target-market";
 import { SectionTeam } from "@/components/section-team";
 import { SectionTraction } from "@/components/section-traction";
 import { SectionVision } from "@/components/section-vision";
@@ -71,6 +72,9 @@ export function PitchCarousel() {
         </CarouselItem>
         <CarouselItem>
           <SectionTeam />
+        </CarouselItem>
+        <CarouselItem>
+          <SectionTargetMarket />
         </CarouselItem>
         <CarouselItem>
           <SectionSubscription />

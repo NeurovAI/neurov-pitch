@@ -103,10 +103,16 @@ export function SectionSolution() {
 
               <p className="text-muted-foreground text-sm text-center">
                 Track performance of your SMS campaigns. <br />
-                See how many leads are interested. <br />
-                See how many leads are booked. <br />
-                See how many leads are uninterested. <br />
-                See how many leads are dead. <br />
+                SMS delivery rate. <br />
+                Reply rate. <br />
+                Booking rate. <br />
+                Conversion rate. <br />
+                Cost per lead. <br />
+                Cost per booking. <br />
+                Cost per conversion. <br />
+                Cost per lead. <br />
+                Cost per booking. <br />
+                Cost per conversion. <br />
               </p>
             </Card>
           </div>
