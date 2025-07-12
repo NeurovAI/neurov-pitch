@@ -19,10 +19,10 @@ export function SectionSubscription() {
           <div className="grid md:grid-cols-3 gap-8 md:pt-0 md:mb-[80px] mb-12">
             <Card className="pb-8">
               <span className="py-1 px-4 bg-white text-black rounded-lg text-sm font-medium mb-4">
-                Base
+                Setup fee
               </span>
 
-              <h2 className="text-2xl">Free</h2>
+              <h2 className="text-2xl">15,000 USD</h2>
               <p className="text-muted-foreground text-sm text-center">
                 We will offer a free limited plan for customers to get to know
                 the system.
@@ -31,10 +31,10 @@ export function SectionSubscription() {
 
             <Card className="pb-8">
               <span className="py-1 px-4 border border-border rounded-lg text-sm font-medium mb-4">
-                Pro
+                SMS usage
               </span>
 
-              <h2 className="text-2xl">TBD/ mo</h2>
+              <h2 className="text-2xl">0.8c/segment</h2>
               <p className="text-muted-foreground text-sm text-center">
                 This is the price new users will pay when we launch. The price
                 is yet to be determined.
@@ -43,7 +43,7 @@ export function SectionSubscription() {
 
             <Card className="pb-8">
               <span className="py-1 px-4 border border-border rounded-lg text-sm font-medium mb-4">
-                Enterprise
+                TCR registration
               </span>
 
               <h2 className="text-2xl">TBD</h2>
