@@ -18,7 +18,7 @@ export function SectionSubscription() {
 
           <div className="grid md:grid-cols-3 gap-8 md:pt-0 md:mb-[80px] mb-12">
             <Card className="pb-8">
-              <span className="py-1 px-4 bg-white text-black rounded-lg text-sm font-medium mb-4">
+              <span className="py-1 px-4 bg-black text-white dark:bg-white dark:text-black rounded-lg text-sm font-medium mb-4">
                 Setup fee
               </span>
 
@@ -30,7 +30,7 @@ export function SectionSubscription() {
             </Card>
 
             <Card className="pb-8">
-              <span className="py-1 px-4 border border-border rounded-lg text-sm font-medium mb-4">
+              <span className="py-1 px-4 bg-black text-white dark:bg-white dark:text-black rounded-lg text-sm font-medium mb-4">
                 SMS usage
               </span>
 
@@ -42,7 +42,7 @@ export function SectionSubscription() {
             </Card>
 
             <Card className="pb-8">
-              <span className="py-1 px-4 border border-border rounded-lg text-sm font-medium mb-4">
+              <span className="py-1 px-4 bg-black text-white dark:bg-white dark:text-black rounded-lg text-sm font-medium mb-4">
                 Database storage
               </span>
 
@@ -59,7 +59,7 @@ export function SectionSubscription() {
 
           <div className="grid md:grid-cols-3 gap-8 md:pt-0">
             <Card className="pb-8">
-              <h2>Team seats</h2>
+              <h2>Starter</h2>
               <p className="text-muted-foreground text-sm text-center">
                 Additional team members will be per seat pricing. The team will
                 have the ability to invite how many users they want.
@@ -67,7 +67,7 @@ export function SectionSubscription() {
             </Card>
 
             <Card className="pb-8">
-              <h2>Vault storage</h2>
+              <h2>Pro</h2>
               <p className="text-muted-foreground text-sm text-center">
                 A limit will be set to the storage since this is also a moving
                 cost for us. Everything above that limit will cost the users
@@ -76,7 +76,7 @@ export function SectionSubscription() {
             </Card>
 
             <Card className="pb-8">
-              <h2>Custom domain</h2>
+              <h2>Enterprise</h2>
               <p className="text-muted-foreground text-sm text-center">
                 If the user want a custom inbox email, for example
                 acme.inbox@midday.ai, we can provide this for an additional fee.
