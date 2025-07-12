@@ -2,7 +2,6 @@ import Image from "next/image";
 import Link from "next/link";
 import gonzi from "./assets/gonzi.png";
 import amin from "./assets/amin.png";
-import socialProof from "./assets/social-proof.png";
 import { Card } from "./ui";
 
 export function SectionTargetMarket() {
@@ -17,6 +16,7 @@ export function SectionTargetMarket() {
       <div className="min-h-screen flex flex-col justify-center max-w-7xl mx-auto px-4 md:px-8">
         <div className="grid md:grid-cols-2 gap-12 md:pt-0 pb-[100px] md:pb-0">
           <div className="space-y-8">
+            <h2 className="text-2xl font-regular mb-6">Pilot Clients</h2>
             <Card className="flex-col md:flex-row items-start md:items-stretch space-y-4 md:space-y-0 md:space-x-0 relative">
               {/* Gonzalo's image container - left side on desktop */}
               <div className="w-full md:w-[30%] flex-shrink-0 h-48 md:h-auto">
@@ -74,15 +74,42 @@ export function SectionTargetMarket() {
             </Card>
 
           </div>
-          <div className="space-y-8 flex flex-col items-center">
-            <Image
-              src={socialProof}
-              alt="Social Proof"
-              width={400}
-              height={500}
-              quality={100}
-              className="w-full max-w-[400px] h-auto object-contain"
-            />
+          <div className="space-y-8">
+            <Card className="pb-8">
+              <span className="py-1 px-4 bg-black text-white dark:bg-white dark:text-black rounded-lg text-sm font-medium mb-4">
+                Phase 1
+              </span>
+
+              <h2 className="text-2xl">Test with Pilot Clients</h2>
+              <p className="text-muted-foreground text-sm text-center">
+                Leverage warm network from USHA to refine product-market fit. <br/> 
+                Add features to accommodate their pain points. <br/>
+                Achieve 100% satisfaction rating.
+              </p>
+            </Card>
+
+            <Card className="pb-8">
+              <span className="py-1 px-4 bg-black text-white dark:bg-white dark:text-black rounded-lg text-sm font-medium mb-4">
+                Phase 2
+              </span>
+
+              <h2 className="text-2xl">Dominate US health insurance niche</h2>
+              <p className="text-muted-foreground text-sm text-center">
+                Dominate the US health insurance niche by acquiring 500+ of the highest performing advisors, achieving 100% satisfaction rating.
+              </p>
+            </Card>
+
+            <Card className="pb-8">
+              <span className="py-1 px-4 bg-black text-white dark:bg-white dark:text-black rounded-lg text-sm font-medium mb-4">
+                Phase 3
+              </span>
+
+              <h2 className="text-2xl">Expand to other niches</h2>
+              <p className="text-muted-foreground text-sm text-center">
+                Once configuraiton and product-market fit is established, expand to other niches. Leveraging organic and paid acquisition channels.
+              </p>
+            </Card>
+
           </div>
         </div>
       </div>

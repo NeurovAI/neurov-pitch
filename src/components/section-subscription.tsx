@@ -43,20 +43,18 @@ export function SectionSubscription() {
 
             <Card className="pb-8">
               <span className="py-1 px-4 bg-black text-white dark:bg-white dark:text-black rounded-lg text-sm font-medium mb-4">
-                Database storage
+                Bookings
               </span>
 
-              <h2 className="text-2xl">20 USD/month</h2>
+              <h2 className="text-2xl">20 USD/qualified booking</h2>
               <p className="text-muted-foreground text-sm text-center">
-                A limit will be set to lead storage. <br/>
-                100,000+ leads will cost 30 USD/month. <br/>
-                Accomodating moving costs.
+                Users will be invoiced monthly on the number of qualified leads that were booked as a result of using TARA. 
               </p>
             </Card>
           </div>
 
           <div className="mb-4">
-            <h2 className="text-2xl">Sclaing into Traditional SaaS</h2>
+            <h2 className="text-2xl">Scaling into Traditional SaaS</h2>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 md:pt-0">
@@ -65,7 +63,7 @@ export function SectionSubscription() {
                 Starter
               </span>
 
-              <h2 className="text-2xl">40 USD/month</h2>
+              <h2 className="text-2xl">39 USD/month</h2>
               <p className="text-muted-foreground text-sm text-center">
                 Allow access to Agentic behaviour configuration. <br/>
                 Limit on SMS capacity. <br/>
@@ -78,7 +76,7 @@ export function SectionSubscription() {
                 Pro
               </span>
 
-              <h2 className="text-2xl">100 USD/month</h2>
+              <h2 className="text-2xl">99 USD/month</h2>
               <p className="text-muted-foreground text-sm text-center">
                 Beta access to newest agentic features. <br/>
                 Increased SMS capacity. <br/>
@@ -91,7 +89,7 @@ export function SectionSubscription() {
                 Enterprise
               </span>
 
-              <h2 className="text-2xl">1,000 USD/month</h2>
+              <h2 className="text-2xl">999 USD/month</h2>
               <p className="text-muted-foreground text-sm text-center">
                 Bespoke customer service for prompt design. <br/>
                 Unlimited SMS capacity. <br/>

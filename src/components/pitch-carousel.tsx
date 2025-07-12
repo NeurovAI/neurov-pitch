@@ -71,10 +71,10 @@ export function PitchCarousel() {
           <SectionTraction />
         </CarouselItem>
         <CarouselItem>
-          <SectionTeam />
+          <SectionTargetMarket />
         </CarouselItem>
         <CarouselItem>
-          <SectionTargetMarket />
+          <SectionTeam />
         </CarouselItem>
         <CarouselItem>
           <SectionSubscription />

@@ -2,12 +2,8 @@
 
 // import { fetchGithubStars } from "@/actions/fetch-github-stars";
 // import { fetchStats } from "@/actions/fetch-stats";
-import { Button } from "./ui/button";
-import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { FaXTwitter } from "react-icons/fa6";
-import customers from "./assets/customers.png";
 import { Card } from "./ui";
 
 export function SectionTraction() {
@@ -123,22 +119,36 @@ export function SectionTraction() {
           </div>
 
           <div className="ml-auto w-full max-w-[820px] h-full border border-border rounded-xl p-6 bg-[#0C0C0C] relative">
-            <h2 className="mb-24 block text-[38px]">What people say</h2>
+            <h2 className="mb-8 block text-[38px] text-white">What people say</h2>
 
-            <div className="absolute w-[220px] bottom-6 left-[50%] -mt-5 -ml-[110px] flex justify-center">
-              <a
-                href="https://twitter.com/search?q=midday.ai&src=typed_query&f=top"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <Button className="w-full flex items-center space-x-2 h-10">
-                  <span>More posts on</span>
-                  <FaXTwitter />
-                </Button>
-              </a>
+            <div className="space-y-6">
+              <Card className="p-6">
+                <blockquote className="text-muted-foreground text-sm italic mb-4">
+                  "You're going to change SMS marketing forever. I have multiple teams that are ready and waiting for Arena the launch."
+                </blockquote>
+                <cite className="text-muted-foreground text-sm font-medium">
+                  - Gonzalo Gonzalez
+                </cite>
+              </Card>
+
+              <Card className="p-6">
+                <blockquote className="text-muted-foreground text-sm italic mb-4">
+                  "If you can nail this and stay compliant with US SMS law, i can promise you will have a lot of customers."
+                </blockquote>
+                <cite className="text-muted-foreground text-sm font-medium">
+                  - Amin Kordian
+                </cite>
+              </Card>
+
+              <Card className="p-6">
+                <blockquote className="text-muted-foreground text-sm italic mb-4">
+                  "The time that we would save with TARA would free us more to focus on customer care."
+                </blockquote>
+                <cite className="text-muted-foreground text-sm font-medium">
+                  - Amin Kordian
+                </cite>
+              </Card>
             </div>
-
-            <Image src={customers} width={698} alt="Customers" quality={100} />
           </div>
         </div>
       </div>

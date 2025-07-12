@@ -1,59 +1,23 @@
 import Image from "next/image";
 import Link from "next/link";
 import app from "./assets/app.png";
-import apps from "./assets/apps.png";
-import engine from "./assets/engine.png";
-import invoice from "./assets/invoice.png";
-import ai from "./assets/midday-ai.png";
+import tuff3 from "./assets/tuff3.png";
 import { Card } from "./ui";
 
 export function SectionNext() {
   return (
     <div className="min-h-screen relative w-screen">
       <div className="absolute left-4 right-4 md:left-8 md:right-8 top-4 flex justify-between text-lg">
-        <span>Whats coming next</span>
+        <span>What's coming next</span>
         <span className="text-muted-foreground">
           <Link href="/">neurov.ai</Link>
         </span>
       </div>
       <div className="min-h-screen flex flex-col justify-center max-w-7xl mx-auto px-4 md:px-8">
         <div className="grid md:grid-cols-3 gap-8 md:pt-0 h-[580px] md:h-auto overflow-auto pb-[100px] md:pb-0">
-          <div className="space-y-8">
-            <Card className="min-h-[370px]">
-              <h2 className="text-xl">NINA</h2>
-              <span />
-              <Image src={invoice} width={362} alt="Invoice" quality={100} />
-            </Card>
-
-            <a
-              href="https://midday.ai/engine"
-              target="_blank"
-              rel="noreferrer"
-              className="block"
-            >
-              <Card className="min-h-[370px]">
-                <h2 className="text-xl">Engine</h2>
-                <span className="underline">Read more</span>
-                <Image src={engine} width={362} alt="Engine" quality={100} />
-              </Card>
-            </a>
-          </div>
-          <div className="space-y-8">
-            <Card className="min-h-[370px]">
-              <h2 className="text-xl">Website form integration</h2>
-              <span />
-              <Image src={ai} width={362} alt="Midday AI" quality={100} />
-            </Card>
-
-            <Card className="min-h-[370px]">
-              <h2 className="text-xl">Apps & integrations</h2>
-              <span />
-              <Image
-                src={apps}
-                width={362}
-                alt="Apps & integrations"
-                quality={100}
-              />
+          <div className="md:col-span-2">
+            <Card className="h-full flex items-center justify-center p-6">
+              <Image src={tuff3} width={800} alt="What's coming next" quality={100} className="w-full h-auto object-contain" />
             </Card>
           </div>
 
