@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import overview from "./assets/overview.png";
+import NeuroVMonogram from "./assets/neurov-monogram.svg";
+import MonogramV1 from "./assets/monogram-v1.svg";
 import { Card } from "./ui";
 
 export function SectionSolution() {
@@ -16,75 +18,55 @@ export function SectionSolution() {
         <div className="grid md:grid-cols-3 gap-8 pt-16 md:pt-16 h-[580px] md:h-auto overflow-auto pb-[100px] md:pb-0">
           <div className="space-y-8">
             <Card>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width={60}
-                height={68}
-                fill="none"
-              >
-                <path
-                  fill="#F5F5F3"
-                  d="M0 67.333V.667l5 5 5-5 5 5 5-5 5 5 5-5 5 5 5-5 5 5 5-5 5 5 5-5v66.666l-5-5-5 5-5-5-5 5-5-5-5 5-5-5-5 5-5-5-5 5-5-5-5 5Zm10-16.666h40V44H10v6.667Zm0-13.334h40v-6.666H10v6.666ZM10 24h40v-6.667H10V24ZM6.667 57.667h46.666V10.333H6.667v47.334Z"
+              <div className="w-[60px] h-[60px] text-foreground">
+                <Image
+                  src={NeuroVMonogram}
+                  alt="NeuroV Monogram"
+                  width={60}
+                  height={60}
+                  className="w-full h-full dark:invert"
                 />
-              </svg>
-              <h2 className="text-2xl">One OS</h2>
+              </div>
+              <h2 className="text-2xl">TARA v0.5</h2>
 
               <p className="text-muted-foreground text-sm text-center">
-                We set out on a journey to develop an all-encompassing business
-                operating system. Our overarching aim is to empower
-                entrepreneurs by providing them with a comprehensive suite of
-                tools that not only streamlines tedious tasks but also
-                facilitates the acquisition of deeper insights into their
-                businesses.
+              <strong>TARA is deployed on The Arena</strong>
+              <br />
+              Perform sentiment analysis on every message. <br />
+              Automatically qualify leads. <br />
+              Book interested leads. <br />
+              Store uninterested leads in dead list. <br />
+              Nurture booked leads to increases show-up rate. <br />
               </p>
             </Card>
 
             <Card>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width={80}
-                height={80}
-                fill="none"
-              >
-                <mask
-                  id="a"
+              <div className="w-[80px] h-[80px] text-foreground">
+                <Image
+                  src={MonogramV1}
+                  alt="Monogram V1"
                   width={80}
                   height={80}
-                  x={0}
-                  y={0}
-                  maskUnits="userSpaceOnUse"
-                  style={{
-                    maskType: "alpha",
-                  }}
-                >
-                  <path fill="#D9D9D9" d="M0 0h80v80H0z" />
-                </mask>
-                <g mask="url(#a)">
-                  <path
-                    fill="#F5F5F3"
-                    d="M56.667 70C53 70 49.86 68.695 47.25 66.083c-2.611-2.61-3.917-5.75-3.917-9.416 0-3.667 1.306-6.806 3.917-9.417 2.611-2.611 5.75-3.917 9.417-3.917 3.666 0 6.805 1.306 9.416 3.917C68.694 49.861 70 53 70 56.667c0 3.666-1.306 6.805-3.917 9.416-2.61 2.612-5.75 3.917-9.416 3.917Zm0-6.667c1.833 0 3.402-.652 4.708-1.958s1.958-2.875 1.958-4.708c0-1.834-.652-3.403-1.958-4.709C60.069 50.653 58.5 50 56.667 50c-1.834 0-3.403.653-4.709 1.958C50.653 53.264 50 54.833 50 56.667c0 1.833.653 3.402 1.958 4.708 1.306 1.306 2.875 1.958 4.709 1.958ZM23.333 60c-3.666 0-6.805-1.306-9.416-3.917-2.611-2.61-3.917-5.75-3.917-9.416 0-3.667 1.306-6.806 3.917-9.417 2.61-2.611 5.75-3.917 9.416-3.917 3.667 0 6.806 1.306 9.417 3.917 2.611 2.611 3.917 5.75 3.917 9.417 0 3.666-1.306 6.805-3.917 9.416C30.139 58.694 27 60 23.333 60Zm0-6.667c1.834 0 3.403-.652 4.709-1.958C29.347 50.069 30 48.5 30 46.667c0-1.834-.653-3.403-1.958-4.709C26.736 40.653 25.167 40 23.333 40c-1.833 0-3.402.653-4.708 1.958-1.306 1.306-1.958 2.875-1.958 4.709 0 1.833.652 3.402 1.958 4.708s2.875 1.958 4.708 1.958Zm13.334-20c-3.667 0-6.806-1.305-9.417-3.916-2.611-2.611-3.917-5.75-3.917-9.417s1.306-6.806 3.917-9.417c2.611-2.61 5.75-3.916 9.417-3.916 3.666 0 6.805 1.305 9.416 3.916C48.694 13.194 50 16.333 50 20s-1.306 6.806-3.917 9.417c-2.61 2.61-5.75 3.916-9.416 3.916Zm0-6.666c1.833 0 3.402-.653 4.708-1.959 1.306-1.305 1.958-2.875 1.958-4.708 0-1.833-.652-3.403-1.958-4.708-1.306-1.306-2.875-1.959-4.708-1.959-1.834 0-3.403.653-4.709 1.959C30.653 16.597 30 18.167 30 20c0 1.833.653 3.403 1.958 4.708 1.306 1.306 2.875 1.959 4.709 1.959Z"
-                  />
-                </g>
-              </svg>
+                  className="w-full h-full dark:invert"
+                />
+              </div>
 
-              <h2 className="text-2xl">Intermediary</h2>
+              <h2 className="text-2xl">The Arena</h2>
 
               <p className="text-muted-foreground text-sm text-center">
-                Midday serves as the bridge between you and your accountant,
-                streamlining your month-end procedures, reducing manual work,
-                and easily packaging everything up for financial review. By
-                prioritizing user experience over building a accountant system,
-                we ensure our platform remains user-friendly and entirely
-                focused on what entrepreneurs need. This approach enables us to
-                scale quickly and globally without the need to navigate domestic
-                tax laws and change accountants current workflows.
+                <strong>One screen to manage acquisition channels</strong> <br />
+                No overwhelm. <br />
+                No clutter. <br />
+                Only see what you need. <br />
               </p>
             </Card>
           </div>
           <div className="space-y-8">
             <div className="px-4">
               <h2 className="text-4xl text-center leading-tight">
-                We have a dedicated 'Arena' for clients to deploy AI Agents to put SMS marketing on autopilot.
+                Gamified. <br />
+                Intelligent. <br />
+                Industry validated.
               </h2>
             </div>
 
@@ -94,9 +76,10 @@ export function SectionSolution() {
                 width={80}
                 height={80}
                 fill="none"
+                className="text-foreground"
               >
                 <mask
-                  id="a"
+                  id="b"
                   width={80}
                   height={80}
                   x={0}
@@ -108,25 +91,22 @@ export function SectionSolution() {
                 >
                   <path fill="#D9D9D9" d="M0 0h80v80H0z" />
                 </mask>
-                <g mask="url(#a)">
+                <g mask="url(#b)">
                   <path
-                    fill="#F5F5F3"
+                    fill="currentColor"
                     d="M13.333 66.667c-1.833 0-3.402-.653-4.708-1.959C7.319 63.403 6.667 61.833 6.667 60V20c0-1.833.652-3.403 1.958-4.708 1.306-1.306 2.875-1.959 4.708-1.959h53.334c1.833 0 3.402.653 4.708 1.959 1.305 1.305 1.958 2.875 1.958 4.708v40c0 1.833-.653 3.403-1.958 4.708-1.306 1.306-2.875 1.959-4.708 1.959H13.333Zm0-6.667h53.334V26.667H13.333V60ZM25 56.667 20.333 52l8.584-8.667-8.667-8.666L25 30l13.333 13.333L25 56.667Zm15 0V50h20v6.667H40Z"
                   />
                 </g>
               </svg>
 
-              <h2 className="text-2xl">User friendly & AI</h2>
+              <h2 className="text-2xl">Performance Analytics</h2>
 
               <p className="text-muted-foreground text-sm text-center">
-                We&apos;re focusing on building the platform with our community to
-                ensure it&apos;s as user-friendly as possible and covers all the
-                features needed to assist as many business owners as possible.
-                We&apos;ve all witnessed the rise of AI, and we&apos;ve already integrated
-                various AI aspects into our platform. For instance, we&apos;ve
-                implemented features such as matching receipts to transactions,
-                category automation, and engaging with your financials through
-                Midday AI, allowing users to ask for any insights they may need.
+                Track performance of your SMS campaigns. <br />
+                See how many leads are interested. <br />
+                See how many leads are booked. <br />
+                See how many leads are uninterested. <br />
+                See how many leads are dead. <br />
               </p>
             </Card>
           </div>

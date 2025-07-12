@@ -15,54 +15,69 @@ export function SectionTeam() {
         </span>
       </div>
       <div className="min-h-screen flex flex-col justify-center max-w-7xl mx-auto px-4 md:px-8">
-        <div className="grid md:grid-cols-2 gap-12 md:pt-0 h-[580px] md:h-auto overflow-auto pb-[100px] md:pb-0">
+        <div className="grid md:grid-cols-2 gap-12 md:pt-0 pb-[100px] md:pb-0">
           <div className="space-y-8">
-            <Card className="items-start space-y-0 relative">
-              {/* Dmitri's image positioned in top-right corner */}
-              <Image
-                src={dmitriSitting}
-                alt="Dmitri Jarkov"
-                width={100}
-                height={100}
-                quality={100}
-                className="absolute top-4 right-4 w-[100px] h-[100px] object-cover rounded-lg"
-              />
+            <Card className="flex-col md:flex-row items-start md:items-stretch space-y-4 md:space-y-0 md:space-x-0 relative">
+              {/* Dmitri's image container - left side on desktop */}
+              <div className="w-full md:w-[30%] flex-shrink-0 h-48 md:h-auto">
+                <Image
+                  src={dmitriSitting}
+                  alt="Dmitri Jarkov"
+                  width={400}
+                  height={400}
+                  quality={100}
+                  className="w-full h-full object-cover rounded-lg"
+                />
+              </div>
 
-              <h2 className="text-xl">Dmitri Jarkov</h2>
-              <span>Co-founder and COO</span>
+              {/* Text content container - right side on desktop */}
+              <div className="w-full md:w-[70%] flex flex-col justify-start space-y-2 md:pl-6 pt-0 md:pt-0">
+                <h2 className="text-xl">Dmitri Jarkov</h2>
+                <span>Co-founder and COO</span>
 
-              <p className="text-muted-foreground text-sm !mt-2">
-                B.Eng (Chemical)(Honours) from UoA. <br />
-                <br />
-                3 years experience in Operational Leadership as a professional Engineer. <br />
-                Responsible for 60m USD in CAPEX for Oil and Gas Operator. <br />
-                Self-taugh full-stack developer.
-              </p>
+                <p className="text-muted-foreground text-sm">
+                  B.Eng (Chemical)(Honours) from UoA. <br />
+                  <br />
+                  3 years experience in Operational Leadership as a professional Engineer. <br />
+                  Responsible for 60m USD in CAPEX for Oil and Gas Operator. <br />
+                  Self-taugh full-stack developer.
+                </p>
+              </div>
             </Card>
 
-            <Card className="items-start space-y-0 relative">
-              {/* Ali's image positioned in top-right corner */}
-              <Image
-                src={aliStanding}
-                alt="Ali Mohammad"
-                width={100}
-                height={100}
-                quality={100}
-                className="absolute top-4 right-4 w-[100px] h-[100px] object-cover rounded-lg"
-              />
+            <Card className="flex-col md:flex-row items-start md:items-stretch space-y-4 md:space-y-0 md:space-x-0 relative">
+              {/* Ali's image container - left side on desktop */}
+              <div className="w-full md:w-[30%] flex-shrink-0 h-48 md:h-auto">
+                <Image
+                  src={aliStanding}
+                  alt="Ali Mohammad"
+                  width={400}
+                  height={400}
+                  quality={100}
+                  className="w-full h-full object-cover rounded-lg"
+                />
+              </div>
 
-              <h2 className="text-xl">Ali Mohammad</h2>
-              <span className="mb-4">Co-founder and CTO</span>
+              {/* Text content container - right side on desktop */}
+              <div className="w-full md:w-[70%] flex flex-col justify-start space-y-2 md:pl-6 pt-0 md:pt-0">
+                <h2 className="text-xl">Ali Mohammad</h2>
+                <span>Co-founder and CTO</span>
 
-              <p className="text-muted-foreground text-sm !mt-2">
-                UG B.Eng (Mechancal)(Honours) from UQ <br />
-                <br />
-                Former President of UQ Mech Eng Society. <br />
-                1300+ subscriber on YouTube educating his community on automation tools. <br />
-                Experienced in leveraging LLMs to build fully functional SaaS products. <br />
-                Self-taugh full-stack developer.
-              </p>
+                <p className="text-muted-foreground text-sm">
+                  UG B.Eng (Mechancal)(Honours) from UQ <br />
+                  <br />
+                  Former President of UQ Mech Eng Society. <br />
+                  1300+ subscriber on YouTube educating his community on automation tools. <br />
+                  Experienced in leveraging LLMs to build fully functional SaaS products. <br />
+                  Self-taugh full-stack developer.
+                </p>
+              </div>
             </Card>
+
+            {/* Quote directly below the founder cards */}
+            <p className="text-4xl font-semibold mt-8 mb-0 text-center max-w-xl mx-auto">
+              "Listen to customers. Never assume you know their pain."
+            </p>
           </div>
           <div className="space-y-8 flex flex-col items-center">
             <h2 className="text-[60px] font-medium text-center leading-tight max-w-none">
@@ -77,10 +92,6 @@ export function SectionTeam() {
               className="w-full max-w-[800px] h-auto object-contain"
             />
           </div>
-
-
-              “”
-
         </div>
       </div>
     </div>
