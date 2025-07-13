@@ -62,14 +62,16 @@ export function SectionDemo({ playVideo }: Props) {
   );
 
   useEffect(() => {
-    if (isDesktop) {
-      if (playVideo) {
-        togglePlay();
-      } else {
-        togglePlay();
+    if (isDesktop && playerRef.current) {
+      if (playVideo && !isPlaying) {
+        playerRef.current.play();
+        setPlaying(true);
+      } else if (!playVideo && isPlaying) {
+        playerRef.current.pause();
+        setPlaying(false);
       }
     }
-  }, [playVideo, isDesktop, togglePlay]);
+  }, [playVideo, isDesktop, isPlaying]);
 
   return (
     <div className="min-h-screen relative w-screen">
@@ -130,7 +132,7 @@ export function SectionDemo({ playVideo }: Props) {
           <video
             ref={playerRef}
             onClick={togglePlay}
-            src="/arena.mp4"
+            src="/ARENA1.mp4"
             autoPlay={false}
             controls={!isDesktop}
             className="w-full max-h-[90%] lg:max-h-full mt-8 bg-card max-w-[1280px] m-auto"

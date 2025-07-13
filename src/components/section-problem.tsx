@@ -31,8 +31,14 @@ export function SectionProblem() {
               <h2 className="text-2xl">Wasted time and revenue</h2>
 
               <p className="text-muted-foreground text-sm text-center">
-              SMS marketing delivers some of the highest open rates in lead acquisition.
-              But legacy CRMs are a nightmare—bloated with trigger words, tagging systems, and manual workflows that make managing the customer journey painful. Aged leads get ignored. Time is wasted. Revenue is lost. Your database works against you instead of for you. 
+              SMS marketing is great for delivery. <br/>
+              But legacy CRMs are a nightmare <br/>
+              trigger words, <br/>
+              tagging systems, <br/>
+              manual workflows that make managing the customer journey painful. <br/>
+              Aged get ignored. <br/>
+              Time is wasted. <br/>
+              Revenue is lost. <br/>
               </p>
             </Card>
             <div className="px-8">
