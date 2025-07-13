@@ -81,7 +81,9 @@ export function SectionTeam() {
           </div>
           <div className="space-y-8 flex flex-col items-center">
             <h2 className="text-[60px] font-medium text-center leading-tight max-w-none">
-              Our strength: Technical synergy and business acumen
+              Speed. <br/>
+              Hunger. <br/>
+              Drive.
             </h2>
             <Image
               src={team1}
