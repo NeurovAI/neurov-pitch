@@ -76,7 +76,8 @@ export function SectionTeam() {
 
             {/* Quote directly below the founder cards */}
             <p className="text-4xl font-semibold mt-8 mb-0 text-center max-w-xl mx-auto">
-              "Listen to customers. Never assume you know their pain."
+              "              {/* eslint-disable-next-line react/no-unescaped-entities */}
+              "Listen to customers. Never assume you know their pain.""
             </p>
           </div>
           <div className="space-y-8 flex flex-col items-center">
