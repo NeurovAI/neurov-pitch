@@ -1,5 +1,5 @@
 import { ArchiveIcon } from "@radix-ui/react-icons";
-import { Settings } from "lucide-react";
+import { Settings, Sun, Moon } from "lucide-react";
 import { FaXTwitter } from "react-icons/fa6";
 import { FiGithub } from "react-icons/fi";
 import {
@@ -94,6 +94,8 @@ import {
   MdTrendingUp,
 } from "react-icons/md";
 import { PiDiscordLogo } from "react-icons/pi";
+
+type IconProps = React.SVGProps<SVGSVGElement>;
 
 export const Icons = {
   LogoSmall: (props: any) => (
@@ -320,7 +322,7 @@ export const Icons = {
       />
     </svg>
   ),
-  FileDocument: (props) => (
+  FileDocument: (props: IconProps) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       width={24}
@@ -546,4 +548,6 @@ export const Icons = {
   FolderTransactions: MdTopic,
   Calendar: MdEditCalendar,
   Reply: MdReplay,
+  Sun: Sun,
+  Moon: Moon,
 };

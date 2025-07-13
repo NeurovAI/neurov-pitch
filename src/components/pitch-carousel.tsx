@@ -1,13 +1,13 @@
 "use client";
 
 import { setViewCount } from "@/actions/set-view-count";
-import { SectionBook } from "@/components//section-book";
 import { SectionDemo } from "@/components/section-demo";
 import { SectionNext } from "@/components/section-next";
 import { SectionProblem } from "@/components/section-problem";
 import { SectionSolution } from "@/components/section-solution";
 import { SectionStart } from "@/components/section-start";
 import { SectionSubscription } from "@/components/section-subscription";
+import { SectionTargetMarket } from "@/components/section-target-market";
 import { SectionTeam } from "@/components/section-team";
 import { SectionTraction } from "@/components/section-traction";
 import { SectionVision } from "@/components/section-vision";
@@ -38,7 +38,7 @@ export function PitchCarousel() {
       fetchViewsCount();
       called.current = true;
     }
-  }, [called.current]);
+  }, []);
 
   useEffect(() => {
     if (!api) {
@@ -71,6 +71,9 @@ export function PitchCarousel() {
           <SectionTraction />
         </CarouselItem>
         <CarouselItem>
+          <SectionTargetMarket />
+        </CarouselItem>
+        <CarouselItem>
           <SectionTeam />
         </CarouselItem>
         <CarouselItem>
@@ -81,9 +84,6 @@ export function PitchCarousel() {
         </CarouselItem>
         <CarouselItem>
           <SectionNext />
-        </CarouselItem>
-        <CarouselItem>
-          <SectionBook />
         </CarouselItem>
       </CarouselContent>
 

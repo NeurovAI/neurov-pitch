@@ -6,104 +6,99 @@ export function SectionSubscription() {
     <div className="min-h-screen relative w-screen">
       <div className="absolute left-4 right-4 md:left-8 md:right-8 top-4 flex justify-between text-lg">
         <span>How we will make money</span>
-        <span className="text-[#878787]">
-          <Link href="/">midday.ai</Link>
+        <span className="text-muted-foreground">
+          <Link href="/">neurov.ai</Link>
         </span>
       </div>
-      <div className="flex flex-col min-h-screen justify-center container">
-        <div className="px-4 md:px-0 md:pt-0 h-[580px] md:h-auto overflow-auto pb-[100px] md:pb-0">
+      <div className="min-h-screen flex flex-col justify-center max-w-7xl mx-auto px-4 md:px-8">
+        <div className="md:pt-0 h-[580px] md:h-auto overflow-auto pb-[100px] md:pb-0">
           <div className="mb-4">
-            <h2 className="text-2xl">Tiers</h2>
+            <h2 className="text-2xl">Micro-SaaS Premium Positioning</h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 px-4 md:px-0 md:pt-0 md:mb-[80px] mb-12">
+          <div className="grid md:grid-cols-3 gap-8 md:pt-0 md:mb-[80px] mb-12">
             <Card className="pb-8">
-              <span className="py-1 px-4 bg-white text-black rounded-lg text-sm font-medium mb-4">
-                Base
+              <span className="py-1 px-4 bg-black text-white dark:bg-white dark:text-black rounded-lg text-sm font-medium mb-4">
+                Setup fee
               </span>
 
-              <h2 className="text-2xl">Free</h2>
-              <p className="text-[#878787] text-sm text-center">
-                We will offer a free limited plan for customers to get to know
-                the system.
+              <h2 className="text-2xl">15,000 USD</h2>
+              <p className="text-muted-foreground text-sm text-center">
+                Arena will begin as a premium offering for only the top performing health advisors, who are privately invited to use the software.
               </p>
             </Card>
 
             <Card className="pb-8">
-              <span className="py-1 px-4 border border-border rounded-lg text-sm font-medium mb-4">
+              <span className="py-1 px-4 bg-black text-white dark:bg-white dark:text-black rounded-lg text-sm font-medium mb-4">
+                SMS usage
+              </span>
+
+              <h2 className="text-2xl">0.8c/segment</h2>
+              <p className="text-muted-foreground text-sm text-center">
+                Arena incurs cost of 1.2c/segment <br/>
+                and charges 2c/segment <br/>
+                for a 40% margin. 
+              </p>
+            </Card>
+
+            <Card className="pb-8">
+              <span className="py-1 px-4 bg-black text-white dark:bg-white dark:text-black rounded-lg text-sm font-medium mb-4">
+                Bookings
+              </span>
+
+              <h2 className="text-2xl">20 USD/qualified booking</h2>
+              <p className="text-muted-foreground text-sm text-center">
+                Users will be invoiced monthly on the number of qualified leads that were booked as a result of using TARA. 
+              </p>
+            </Card>
+          </div>
+
+          <div className="mb-4">
+            <h2 className="text-2xl">Scaling into Traditional SaaS</h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 md:pt-0">
+            <Card className="pb-8">
+              <span className="py-1 px-4 bg-black text-white dark:bg-white dark:text-black rounded-lg text-sm font-medium mb-4">
+                Starter
+              </span>
+
+              <h2 className="text-2xl">39 USD/month</h2>
+              <p className="text-muted-foreground text-sm text-center">
+                Allow access to Agentic behaviour configuration. <br/>
+                Limit on SMS capacity. <br/>
+                Limit on lead storage.
+              </p>
+            </Card>
+
+            <Card className="pb-8">
+              <span className="py-1 px-4 bg-black text-white dark:bg-white dark:text-black rounded-lg text-sm font-medium mb-4">
                 Pro
               </span>
 
-              <h2 className="text-2xl">TBD/ mo</h2>
-              <p className="text-[#878787] text-sm text-center">
-                This is the price new users will pay when we launch. The price
-                is yet to be determined.
+              <h2 className="text-2xl">99 USD/month</h2>
+              <p className="text-muted-foreground text-sm text-center">
+                Beta access to newest agentic features. <br/>
+                Increased SMS capacity. <br/>
+                Increased lead storage.
               </p>
             </Card>
 
             <Card className="pb-8">
-              <span className="py-1 px-4 border border-border rounded-lg text-sm font-medium mb-4">
+              <span className="py-1 px-4 bg-black text-white dark:bg-white dark:text-black rounded-lg text-sm font-medium mb-4">
                 Enterprise
               </span>
 
-              <h2 className="text-2xl">TBD</h2>
-              <p className="text-[#878787] text-sm text-center">
-                This plan will be offered to bigger companies with lots of
-                seats. This will be licensed based and the price is yet to be
-                determined.
+              <h2 className="text-2xl">999 USD/month</h2>
+              <p className="text-muted-foreground text-sm text-center">
+                Bespoke customer service for prompt design. <br/>
+                Unlimited SMS capacity. <br/>
+                Unlimited lead storage.
               </p>
             </Card>
           </div>
 
-          <div className="mb-4">
-            <h2 className="text-2xl">Add ons</h2>
-          </div>
 
-          <div className="grid md:grid-cols-3 gap-8 px-4 md:px-0 md:pt-0">
-            <Card className="pb-8">
-              <h2>Team seats</h2>
-              <p className="text-[#878787] text-sm text-center">
-                Additional team members will be per seat pricing. The team will
-                have the ability to invite how many users they want.
-              </p>
-            </Card>
-
-            <Card className="pb-8">
-              <h2>Vault storage</h2>
-              <p className="text-[#878787] text-sm text-center">
-                A limit will be set to the storage since this is also a moving
-                cost for us. Everything above that limit will cost the users
-                extra. Price is yet to be determined.
-              </p>
-            </Card>
-
-            <Card className="pb-8">
-              <h2>Custom domain</h2>
-              <p className="text-[#878787] text-sm text-center">
-                If the user want a custom inbox email, for example
-                acme.inbox@midday.ai, we can provide this for an additional fee.
-              </p>
-            </Card>
-          </div>
-
-          <div className="px-4 md:px-0">
-            <a
-              href="https://midday.ai/engine"
-              target="_blank"
-              rel="noreferrer"
-              className="block"
-            >
-              <div className="ful-w p-4 border border-border bg-[#121212] rounded-xl px-6 mt-8 text-center flex flex-col justify-center items-center space-y-4 pb-8">
-                <h2>Engine</h2>
-                <p className="text-[#878787] text-sm text-center max-w-[800px]">
-                  Midday Engine streamlines banking integrations with a single
-                  API, effortlessly connecting to multiple providers and get one
-                  unified format and UI. We currently utilize our Engine
-                  internally, but we will soon offer it as a paid service.
-                </p>
-              </div>
-            </a>
-          </div>
         </div>
       </div>
     </div>
