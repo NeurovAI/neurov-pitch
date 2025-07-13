@@ -31,12 +31,12 @@ export function SectionProblem() {
               <h2 className="text-2xl">Wasted time and revenue</h2>
 
               <p className="text-muted-foreground text-sm text-center">
-              SMS marketing is great for delivery. <br/>
-              But legacy CRMs are a nightmare <br/>
+              SMS marketing is great for delivery, <br/>
+              but legacy CRMs are a nightmare <br/>
               trigger words, <br/>
               tagging systems, <br/>
               manual workflows that make managing the customer journey painful. <br/>
-              Aged get ignored. <br/>
+              Aged leads get ignored. <br/>
               Time is wasted. <br/>
               Revenue is lost. <br/>
               </p>
