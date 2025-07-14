@@ -36,7 +36,7 @@ export function SectionTraction() {
       <div className="absolute left-4 right-4 md:left-8 md:right-8 top-4 flex justify-between text-lg">
         <span>Where we are</span>
         <span className="text-muted-foreground">
-          <Link href="/">neurov.ai</Link>
+          <Link href="/">arenacrm.com</Link>
         </span>
       </div>
       <div className="min-h-screen flex flex-col justify-center max-w-7xl mx-auto px-4 md:px-8">

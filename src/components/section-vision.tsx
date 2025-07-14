@@ -7,7 +7,7 @@ export function SectionVision() {
       <div className="absolute left-8 right-8 top-4 flex justify-between text-lg">
         <span>Our vision</span>
         <span className="text-muted-foreground">
-          <Link href="/">neurov.ai</Link>
+          <Link href="/">arenacrm.com</Link>
         </span>
       </div>
       <div className="min-h-screen flex flex-col justify-center max-w-7xl mx-auto px-4 md:px-8">
