@@ -10,7 +10,8 @@ export function SectionStart() {
       </span>
 
       <div className="min-h-screen relative flex flex-col justify-center max-w-7xl mx-auto px-4 md:px-8">
-        <div className="absolute bottom-auto mt-[150px] -ml-[35px] md:ml-0 md:mt-0 md:bottom-[650px] scale-50 md:scale-100">
+        {/* Arena Logo - Better mobile positioning */}
+        <div className="absolute top-[20%] left-4 md:left-0 md:top-auto md:bottom-[650px] scale-75 md:scale-100">
           <Image
             src={monogramV1}
             alt="Arena Logo"
@@ -19,19 +20,21 @@ export function SectionStart() {
             className="w-[193px] h-[193px] dark:invert"
           />
         </div>
-        <h1 className="text-[94px] bottom-[250px] left-2 md:text-[362px] absolute md:right-0 md:bottom-8 md:left-auto">
+
+        {/* ARENA text - Better mobile responsiveness */}
+        <h1 className="text-[72px] sm:text-[94px] md:text-[362px] absolute bottom-[30%] left-4 md:right-0 md:bottom-8 md:left-auto leading-none">
           ARENA
         </h1>
 
-        {/* "Brought to you by" text and logo - positioned at bottom of screen */}
-        <div className="absolute bottom-0 right-0 pb-6 pr-4 md:pr-8 flex items-center gap-4 text-2xl md:text-5xl">
-          <span className="black">brought to you by</span>
+        {/* "Brought to you by" text and logo - Better mobile layout */}
+        <div className="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-auto md:right-8 flex flex-col md:flex-row items-start md:items-center gap-2 md:gap-4 text-lg sm:text-2xl md:text-5xl">
+          <span className="text-foreground">brought to you by</span>
           <Image
             src={blackLogoText}
             alt="Neurov Logo"
             width={240}
             height={120}
-            className="w-[240px] h-auto md:w-[300px] -translate-y-1 dark:invert"
+            className="w-[180px] sm:w-[240px] md:w-[300px] h-auto dark:invert"
           />
         </div>
       </div>

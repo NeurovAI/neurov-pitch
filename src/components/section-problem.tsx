@@ -48,14 +48,25 @@ export function SectionProblem() {
               </h2>
             </div>
           </div>
-          <div>
+
+          {/* Receipt image with Market gap text underneath */}
+          <div className="flex flex-col items-center space-y-6">
             <Image
               src={reciept}
               alt="Reciept"
               width={650}
               height={875}
               quality={100}
+              className="max-w-full h-auto"
             />
+
+            {/* Market gap text - now positioned under receipt */}
+            <div className="text-center md:text-left w-full">
+              <p className="font-bold leading-none text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
+                <span className="font-bold">Market gap:</span>{" "}
+                <span className="font-normal">agentic CRMs</span>
+              </p>
+            </div>
           </div>
           <div className="ml-auto w-full space-y-8">
             <Card className="min-h-[315px]">
@@ -128,15 +139,6 @@ export function SectionProblem() {
                 Market leading CRMs are sure to eventually adopt AI, but user-friendly and a gamified user-experience has been abscent for decades.
               </p>
             </Card>
-          </div>
-        </div>
-
-        {/* Market gap text - positioned closer to receipt */}
-        <div className="-mt-32 md:-mt-16">
-          <div className="w-2/3">
-            <p className="font-bold leading-none whitespace-nowrap text-left" style={{ fontSize: '3.5rem' }}>
-              <span className="font-bold">Market gap:</span> <span className="font-normal">agentic CRMs</span>
-            </p>
           </div>
         </div>
       </div>
