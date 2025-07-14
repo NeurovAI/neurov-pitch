@@ -41,16 +41,24 @@ export function SectionProblem() {
               Revenue is lost. <br/>
               </p>
             </Card>
-            <div className="px-8">
+            <div className="px-8 space-y-6">
               <h2 className="text-4xl text-center leading-tight">
                 Consensus: <br />
                 user-friendly CRM software is rare.
               </h2>
+
+              {/* Market gap text - moved here from center column */}
+              <div className="text-center">
+                <p className="font-bold leading-none text-2xl sm:text-3xl md:text-4xl">
+                  <span className="font-bold">Market gap:</span>{" "}
+                  <span className="font-normal">agentic CRMs</span>
+                </p>
+              </div>
             </div>
           </div>
 
-          {/* Pain Path Card with Market gap text underneath */}
-          <div className="flex flex-col space-y-6">
+          {/* Pain Path Card */}
+          <div className="flex flex-col">
             <Card className="min-h-[500px] flex flex-col items-center justify-center p-6">
               <Image
                 src={painPath}
@@ -66,14 +74,6 @@ export function SectionProblem() {
                 leading to lost opportunities and frustrated teams.
               </p>
             </Card>
-
-            {/* Market gap text - now positioned under card */}
-            <div className="text-center md:text-left w-full">
-              <p className="font-bold leading-none text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
-                <span className="font-bold">Market gap:</span>{" "}
-                <span className="font-normal">agentic CRMs</span>
-              </p>
-            </div>
           </div>
           <div className="ml-auto w-full space-y-8">
             <Card className="min-h-[315px]">
