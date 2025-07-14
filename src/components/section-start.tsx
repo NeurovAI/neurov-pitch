@@ -1,6 +1,5 @@
 import Image from "next/image";
 import monogramV1 from "./assets/monogram-v1.svg";
-import blackLogoText from "./assets/black-logo-text.svg";
 
 export function SectionStart() {
   return (
@@ -25,18 +24,6 @@ export function SectionStart() {
         <h1 className="text-[72px] sm:text-[94px] md:text-[362px] absolute bottom-[30%] left-4 md:right-0 md:bottom-8 md:left-auto leading-none">
           ARENA
         </h1>
-
-        {/* "Brought to you by" text and logo - Better mobile layout */}
-        <div className="absolute bottom-4 left-4 right-4 md:bottom-6 md:left-auto md:right-8 flex flex-col md:flex-row items-start md:items-center gap-2 md:gap-4 text-lg sm:text-2xl md:text-5xl">
-          <span className="text-foreground">brought to you by</span>
-          <Image
-            src={blackLogoText}
-            alt="Neurov Logo"
-            width={240}
-            height={120}
-            className="w-[180px] sm:w-[240px] md:w-[300px] h-auto dark:invert"
-          />
-        </div>
       </div>
     </div>
   );
