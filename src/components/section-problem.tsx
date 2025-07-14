@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import reciept from "./assets/reciept.png";
+import painPath from "./assets/pain-path.png";
 import { Card } from "./ui";
 
 export function SectionProblem() {
@@ -49,18 +49,25 @@ export function SectionProblem() {
             </div>
           </div>
 
-          {/* Receipt image with Market gap text underneath */}
-          <div className="flex flex-col items-center space-y-6">
-            <Image
-              src={reciept}
-              alt="Reciept"
-              width={650}
-              height={875}
-              quality={100}
-              className="max-w-full h-auto"
-            />
+          {/* Pain Path Card with Market gap text underneath */}
+          <div className="flex flex-col space-y-6">
+            <Card className="min-h-[500px] flex flex-col items-center justify-center p-6">
+              <Image
+                src={painPath}
+                alt="Pain Path"
+                width={400}
+                height={300}
+                quality={100}
+                className="max-w-full h-auto mb-4"
+              />
+              <h2 className="text-2xl text-center">Customer Journey Pain Points</h2>
+              <p className="text-muted-foreground text-sm text-center mt-4">
+                Traditional CRMs create friction at every step of the customer journey,
+                leading to lost opportunities and frustrated teams.
+              </p>
+            </Card>
 
-            {/* Market gap text - now positioned under receipt */}
+            {/* Market gap text - now positioned under card */}
             <div className="text-center md:text-left w-full">
               <p className="font-bold leading-none text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
                 <span className="font-bold">Market gap:</span>{" "}
