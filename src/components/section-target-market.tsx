@@ -16,7 +16,6 @@ export function SectionTargetMarket() {
       <div className="min-h-screen flex flex-col justify-center max-w-7xl mx-auto px-4 md:px-8">
         <div className="grid md:grid-cols-2 gap-12 md:pt-0 pb-[100px] md:pb-0">
           <div className="space-y-8">
-            <h2 className="text-2xl font-regular mb-6">Pilot Clients</h2>
             <Card className="flex-col md:flex-row items-start md:items-stretch space-y-4 md:space-y-0 md:space-x-0 relative">
               {/* Gonzalo's image container - left side on desktop */}
               <div className="w-full md:w-[30%] flex-shrink-0 h-48 md:h-auto">
