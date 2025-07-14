@@ -124,8 +124,8 @@ export function SectionTraction() {
             <div className="space-y-6">
               <Card className="p-6">
                 <blockquote className="text-muted-foreground text-sm italic mb-4">
-                  "                  {/* eslint-disable-next-line react/no-unescaped-entities */}
-                  "You're going to change SMS marketing forever. I have multiple teams that are ready and waiting for Arena the launch.""
+                                   {/* eslint-disable-next-line react/no-unescaped-entities */}
+                  "You're going to change SMS marketing forever. I have multiple teams that are ready and waiting for Arena the launch."
                 </blockquote>
                 <cite className="text-muted-foreground text-sm font-medium">
                   - Gonzalo Gonzalez
@@ -134,8 +134,8 @@ export function SectionTraction() {
 
               <Card className="p-6">
                 <blockquote className="text-muted-foreground text-sm italic mb-4">
-                  "                  {/* eslint-disable-next-line react/no-unescaped-entities */}
-                  "If you can nail this and stay compliant with US SMS law, i can promise you will have a lot of customers.""
+                                {/* eslint-disable-next-line react/no-unescaped-entities */}
+                  "If you can nail this and stay compliant with US SMS law, i can promise you will have a lot of customers."
                 </blockquote>
                 <cite className="text-muted-foreground text-sm font-medium">
                   - Amin Kordian
@@ -144,8 +144,8 @@ export function SectionTraction() {
 
               <Card className="p-6">
                 <blockquote className="text-muted-foreground text-sm italic mb-4">
-                  "                  {/* eslint-disable-next-line react/no-unescaped-entities */}
-                  "The time that we would save with TARA would free us more to focus on customer care.""
+                                 {/* eslint-disable-next-line react/no-unescaped-entities */}
+                  "The time that we would save with TARA would free us more to focus on customer care."
                 </blockquote>
                 <cite className="text-muted-foreground text-sm font-medium">
                   - Amin Kordian
