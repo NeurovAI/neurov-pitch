@@ -68,10 +68,10 @@ export function SectionProblem() {
                 quality={100}
                 className="max-w-full h-auto mb-4"
               />
-              <h2 className="text-2xl text-center">Customer Journey Pain Points</h2>
+              <h2 className="text-2xl text-center">Outdated workflows</h2>
               <p className="text-muted-foreground text-sm text-center mt-4">
-                Traditional CRMs create friction at every step of the customer journey,
-                leading to lost opportunities and frustrated teams.
+                Market leading CRMs cannot afford to deploy niched AI agents to accommodate 
+                the needs of bespoke qualification criteria that health insurance advisors in the US need to automate SMS marketing. 
               </p>
             </Card>
           </div>
