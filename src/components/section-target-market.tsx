@@ -98,38 +98,7 @@ export function SectionTargetMarket() {
               </p>
             </Card>
 
-            <div className="space-y-4">
-              <span className="py-1 px-4 bg-black text-white dark:bg-white dark:text-black rounded-lg text-sm font-medium">
-                Phase 3
-              </span>
 
-              {/* 1x3 grid of smaller components */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                {/* Component 1 - Company */}
-                <Card className="pb-4 text-center">
-                  <h3 className="text-lg font-semibold mb-2">Company</h3>
-                  <p className="text-sm text-muted-foreground">
-                    USHA - USHEALTH Allies
-                  </p>
-                </Card>
-
-                {/* Component 2 - Annual Revenue */}
-                <Card className="pb-4 text-center">
-                  <h3 className="text-lg font-semibold mb-2">Annual Revenue</h3>
-                  <p className="text-sm text-muted-foreground">
-                    $46M
-                  </p>
-                </Card>
-
-                {/* Component 3 - Health count */}
-                <Card className="pb-4 text-center">
-                  <h3 className="text-lg font-semibold mb-2">Health count</h3>
-                  <p className="text-sm text-muted-foreground">
-                    &gt;4000 Agents with individual LLCs
-                  </p>
-                </Card>
-              </div>
-            </div>
 
           </div>
         </div>
