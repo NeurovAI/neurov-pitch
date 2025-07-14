@@ -35,11 +35,12 @@ export function SectionTargetMarket() {
                 <span>Pilot Client and Business Partner</span>
 
                 <p className="text-muted-foreground text-sm">
-                  Our access to the company USHEALTH Advisors (USHA) with over 4000 health insurance advisors who are starving for our solution. <br />
+                  Our access to the USHEALTH Advisors (USHA) organisation with over 4000 health insurance advisors. <br />
                   <br />
-                  Gonzalo provides direct market validation and strategic partnership opportunities. <br />
+                  Direct market validation and safe product iteration. <br />
                   His network represents our primary target market at scale. <br />
-                  Proven demand for intelligent CRM automation in the health insurance sector.
+                  Proven demand for intelligent CRM automation in the US health insurance sector. <br />
+                  Held in high regard as one of the top performing advisors within USHA.
                 </p>
               </div>
             </Card>
@@ -67,38 +68,37 @@ export function SectionTargetMarket() {
                   <br />
                   Provides real-world testing environment for our CRM solution. <br />
                   Direct feedback from active health insurance professionals. <br />
-                  Validates product-market fit in the health advisory space.
+                  Validates product-market fit in the health advisory space. <br />
+                  Well connected in the health insurance industry.
                 </p>
               </div>
             </Card>
 
           </div>
           <div className="space-y-8">
-            <Card className="pb-8">
-              <span className="py-1 px-4 bg-black text-white dark:bg-white dark:text-black rounded-lg text-sm font-medium mb-4">
-                Phase 1
-              </span>
+            <Card className="min-h-[365px]">
+              <h2 className="text-2xl">Total Addressable Market</h2>
 
-              <h2 className="text-2xl">Test with Pilot Clients</h2>
               <p className="text-muted-foreground text-sm text-center">
-                Leverage warm network from USHA to refine product-market fit. <br/> 
-                Add features to accommodate their pain points. <br/>
-                Achieve 100% satisfaction rating.
+              The annual revenue opportunity available if 100% of health insurance advisors in the US were using Arena.
               </p>
+
+              <span className="mt-auto font-mono text-[80px] md:text-[122px]">
+                $8.5B
+              </span>
             </Card>
 
-            <Card className="pb-8">
-              <span className="py-1 px-4 bg-black text-white dark:bg-white dark:text-black rounded-lg text-sm font-medium mb-4">
-                Phase 2
-              </span>
+            <Card className="min-h-[365px]">
+              <h2 className="text-2xl">Servicable Obtainable Market (SAM) </h2>
 
-              <h2 className="text-2xl">Dominate US health insurance niche</h2>
               <p className="text-muted-foreground text-sm text-center">
-                Dominate the US health insurance niche by acquiring 500+ of the highest performing advisors, achieving 100% satisfaction rating.
+              The segment of TAM within our reach through the 4000+ advisors in our warm USHA network.
               </p>
+
+              <span className="mt-auto font-mono text-[80px] md:text-[122px]">
+                $7.7M
+              </span>
             </Card>
-
-
 
           </div>
         </div>
