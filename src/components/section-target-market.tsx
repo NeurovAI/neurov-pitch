@@ -6,15 +6,15 @@ import { Card } from "./ui";
 
 export function SectionTargetMarket() {
   return (
-    <div className="min-h-screen relative w-screen">
+    <div className="relative w-screen md:min-h-screen">
       <div className="absolute left-4 right-4 md:left-8 md:right-8 top-4 flex justify-between text-lg">
         <span>Target market</span>
         <span className="text-muted-foreground">
           <Link href="/">arenacrm.com</Link>
         </span>
       </div>
-      <div className="min-h-screen flex flex-col justify-center max-w-7xl mx-auto px-4 md:px-8">
-        <div className="grid md:grid-cols-2 gap-12 md:pt-0 pb-[100px] md:pb-0">
+      <div className="max-w-7xl mx-auto px-4 md:px-8 pt-16 md:pt-20 pb-8 md:pb-16 md:min-h-[calc(100vh-5rem)] md:flex md:flex-col md:justify-center">
+        <div className="grid md:grid-cols-2 gap-12 h-[580px] md:h-auto overflow-auto pb-[100px] md:pb-0">
           <div className="space-y-8">
             <Card className="flex-col md:flex-row items-start md:items-stretch space-y-4 md:space-y-0 md:space-x-0 relative">
               {/* Gonzalo's image container - left side on desktop */}
